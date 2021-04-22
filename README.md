@@ -43,6 +43,7 @@ python manage.py runserver
 * Note
  - Withdrawing immediately after deposit result in unique id violation on Transaction Table as the ID is generated based on 
  UUID which is a unique combination based on timestamp and mac address
+- Use user as admin, password: admin123 to login to django admin interface
 
 # Build With
 * [Django](https://www.djangoproject.com/) - Web Framework
