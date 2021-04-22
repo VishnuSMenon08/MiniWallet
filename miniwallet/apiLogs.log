@@ -1,0 +1,1502 @@
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 13, in init_wallet
+    print(request.form.GET('customer_xid'))
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'form'
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 21, in init_wallet
+    token = account.create()
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py", line 22, in create
+    return Token.objects.create(user = self.owned_by)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 451, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 485, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\fields\related_descriptors.py", line 310, in __set__
+    super().__set__(instance, value)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\fields\related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'xxddghl-iiuop-sswgsh'": "Token.user" must be a "User" instance.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: api_service_custauthtoken
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 21, in init_wallet
+    token = account.create()
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py", line 23, in create
+    return auth.save()
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: api_service_custauthtoken
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 21, in init_wallet
+    token = account.create()
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py", line 23, in create
+    return auth.save()
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: api_service_account.changed_at
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 20, in init_wallet
+    token = account.create()
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py", line 21, in create
+    self.save()
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: api_service_account.changed_at
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 22, in init_wallet
+    serialized_data = TokenSerializer(token = token.token_id)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 115, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'token'
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 23, in init_wallet
+    print(serialized_data.data)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 548, in data
+    ret = super().data
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 242, in data
+    raise AssertionError(msg)
+AssertionError: When a serializer is passed a `data` keyword argument you must call `.is_valid()` before attempting to access the serialized `.data` representation.
+You should either call `.is_valid()` first, or access `.initial_data` instead.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 23, in init_wallet
+    if serialized_data.is_valid():
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: api_service_account.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 21, in init_wallet
+    token = account.create()
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py", line 21, in create
+    self.save()
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: api_service_account.id
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'CustAuthToken' object has no attribute 'token'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 23, in init_wallet
+    print(serialized_data.data)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 548, in data
+    ret = super().data
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `token` on serializer `TokenSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `CustAuthToken` instance.
+Original exception text was: 'CustAuthToken' object has no attribute 'token'.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\serializer.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 23, in init_wallet
+    return Response({
+TypeError: __init__() got an unexpected keyword argument 'status_code'
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 36, in enable_wallet
+    return response("Success")
+NameError: name 'response' is not defined
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 35, in enable_wallet
+    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+api_service.models.CustAuthToken.DoesNotExist: CustAuthToken matching query does not exist.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 36, in enable_wallet
+    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+api_service.models.CustAuthToken.DoesNotExist: CustAuthToken matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 38, in enable_wallet
+    print(ex.type)
+AttributeError: 'DoesNotExist' object has no attribute 'type'
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 37, in enable_wallet
+    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+api_service.models.CustAuthToken.DoesNotExist: CustAuthToken matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 38, in enable_wallet
+    except api_service.models.CustAuthToken.DoesNotExist:
+NameError: name 'api_service' is not defined
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 37, in enable_wallet
+    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+api_service.models.CustAuthToken.DoesNotExist: CustAuthToken matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 38, in enable_wallet
+    except DoesNotExist:
+NameError: name 'DoesNotExist' is not defined
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 37, in enable_wallet
+    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+api_service.models.CustAuthToken.DoesNotExist: CustAuthToken matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 38, in enable_wallet
+    except DoesNotExist:
+NameError: name 'DoesNotExist' is not defined
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 37, in enable_wallet
+    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+api_service.models.CustAuthToken.DoesNotExist: CustAuthToken matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 38, in enable_wallet
+    except DoesNotExist:
+NameError: name 'DoesNotExist' is not defined
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 37, in enable_wallet
+    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+api_service.models.CustAuthToken.DoesNotExist: CustAuthToken matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 40, in enable_wallet
+    if "DoesNotExist" in ex_type:
+TypeError: argument of type 'type' is not iterable
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 37, in enable_wallet
+    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+api_service.models.CustAuthToken.DoesNotExist: CustAuthToken matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 40, in enable_wallet
+    if "DoesNotExist" in ex_type:
+TypeError: argument of type 'type' is not iterable
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 37, in enable_wallet
+    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+api_service.models.CustAuthToken.DoesNotExist: CustAuthToken matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 40, in enable_wallet
+    if "DoesNotExist" in ex_type:
+TypeError: argument of type 'type' is not iterable
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+WARNING:django.request:Not Found: /api/v1/wallet
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+WARNING:django.request:Unauthorized: /api/v1/wallet
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\serializer.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 48, in enable_wallet
+    print(serialized_acc_data.data)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 548, in data
+    ret = super().data
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 500, in to_representation
+    for field in fields:
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 1029, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\serializers.py", line 1101, in get_field_names
+    assert not (fields is None and exclude is None), (
+AssertionError: ("Creating a ModelSerializer without either the 'fields' attribute or the 'exclude' attribute has been deprecated since 3.3.0, and is now disallowed. Add an explicit fields = '__all__' to the AccountSerializer serializer.",)
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\serializer.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:root:<class 'NameError'>: name 'CustAuthToken' is not defined
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 10, in authenticate
+    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
+NameError: name 'CustAuthToken' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 19, in authenticate
+    return Response({"error":"Internal server Error"},status=500)
+NameError: name 'Response' is not defined
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+ERROR:root:<class 'NameError'>: name 'CustAuthToken' is not defined
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 23, in authenticate
+    return fn(*args,**kwargs)
+NameError: name 'args' is not defined
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+WARNING:django.request:Unauthorized: /api/v1/wallet
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet/deposits
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 23, in authenticate
+    return fn(request,**kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 91, in deposit
+    account.balance += amount
+NameError: name 'amount' is not defined
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet/deposits
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 23, in authenticate
+    return fn(request,**kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 91, in deposit
+    account.balance += request.POST.get('amount')
+TypeError: unsupported operand type(s) for +=: 'decimal.Decimal' and 'str'
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet/deposits
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 23, in authenticate
+    return fn(request,**kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 91, in deposit
+    account.balance += float(request.POST.get('amount'))
+TypeError: unsupported operand type(s) for +=: 'decimal.Decimal' and 'float'
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet/withdrawals
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 23, in authenticate
+    return fn(request,**kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 117, in withdraw
+    elif amount > account.balance:
+TypeError: '>' not supported between instances of 'str' and 'decimal.Decimal'
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+WARNING:django.request:Method Not Allowed: /api/v1/wallet/withdrawals
+WARNING:django.request:Not Found: /api/v1/wallet/
+WARNING:django.request:Not Found: /api/v1/wallet/
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+WARNING:django.request:Not Found: /api/v1/wallet/
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py changed, reloading.
+WARNING:django.request:Method Not Allowed: /api/v1/init
+ERROR:django.request:Internal Server Error: /api/v1/init
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: api_service_account.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 24, in init_wallet
+    token = account.create()
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\models.py", line 20, in create
+    self.save()
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: api_service_account.id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 31, in init_wallet
+    except Excception as ex:
+NameError: name 'Excception' is not defined
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet/withdrawals
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: api_service_transaction.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 23, in authenticate
+    return fn(request,**kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 147, in withdraw
+    tr.save()
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: api_service_transaction.id
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+WARNING:django.request:Not Found: /api/v1/wallet/
+ERROR:django.request:Internal Server Error: /api/v1/wallet/withdrawals
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: api_service_transaction.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 23, in authenticate
+    return fn(request,**kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 147, in withdraw
+    tr.save()
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: api_service_transaction.id
+ERROR:django.request:Internal Server Error: /api/v1/wallet/withdrawals
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: api_service_transaction.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 23, in authenticate
+    return fn(request,**kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 147, in withdraw
+    tr.save()
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: api_service_transaction.id
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/v1/wallet/withdrawals
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: api_service_transaction.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 23, in authenticate
+    return fn(request,**kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 147, in withdraw
+    tr_wd.save()
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: api_service_transaction.id
+ERROR:django.request:Internal Server Error: /api/v1/wallet/withdrawals
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: api_service_transaction.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\decorators.py", line 23, in authenticate
+    return fn(request,**kwargs)
+  File "C:\Users\vmenon\dev\Project\miniwallet\api_service\views.py", line 147, in withdraw
+    tr_wd.save()
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\models\sql\compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\vmenon\dev\Project\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: api_service_transaction.id
+WARNING:django.request:Not Found: /api/v1/wallet/
