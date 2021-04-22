@@ -36,42 +36,41 @@ def init_wallet(request):
 @is_autheticated
 def enable_wallet(request):
     try:
-        user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
-        account = Account.objects.get(id = user_session.user.id)
+        session = get_session(token_id = request.headers.get('Authorization'))
         if request.method == "POST":
-            if account.status == 'E':
+            if session['account'].status == 'E':
                 return Response({
                     "status" : "fail",
                     "data" : {"error" : "Already Enabled"}
                 })
-            account.status = 'E'
-            account.changed_at = datetime.now().isoformat()
-            account.save()
-            serialized_acc_data = AccountSerializer(account)
+            session['account'].status = 'E'
+            session['account'].changed_at = datetime.now().isoformat()
+            session['account'].save()
+            serialized_acc_data = AccountSerializer(session['account'])
             return Response({"status":"success","data":{"wallet":serialized_acc_data.data}})
         
         elif request.method == "GET":
-            if account.status == 'D':
+            if session['account'].status == 'D':
                  return Response({
                     "status" : "fail",
                     "data" : {"error" : "Account is Disabled"}
                 })
-            serialized_acc_data = AccountSerializer(account)
+            serialized_acc_data = AccountSerializer(session['account'])
             return Response({"status":"success","data":{"wallet":serialized_acc_data.data}})  
 
         elif request.method == "PATCH":
             if "true" in request.POST.get('is_disabled'):
-                if account.status == 'D':
+                if session['account'].status == 'D':
                     return Response({
                     "status" : "fail",
                     "data" : {"error" : "Account already diabled"}
                     },status=200)
-                account.status = 'D'
-                account.save()
-                serialized_acc_data = AccountSerializer(account)
+                session['account'].status = 'D'
+                session['account'].save()
+                serialized_acc_data = AccountSerializer(session['account'])
                 return Response({"status":"success","data":{"wallet":serialized_acc_data.data}})
             else:
-                if account.status == 'D':
+                if session['account'].status == 'D':
                     return Response({
                     "status" : "fail",
                     "data" : {"error" : "Invalid parameter value is_disabled"}
@@ -84,11 +83,10 @@ def enable_wallet(request):
 @api_view(['POST',])
 @is_autheticated
 def deposit(request):
-    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
-    account = Account.objects.get(id = user_session.user.id)
+    session = get_session(token_id = request.headers.get('Authorization'))
     reference_id = request.POST.get('reference_id')
     if request.method == "POST":
-        if account.status == 'D':
+        if session['account'].status == 'D':
             return Response({
                 "status" : "fail",
                 "data" : {"error" : "Account is Disabled"}
@@ -100,14 +98,14 @@ def deposit(request):
                 },status=200)
         
         tr = Transaction(
-            transaction_by = account,
+            transaction_by = session['account'],
             transaction_type = "Deposit",
             transaction_time = datetime.now().isoformat(),
             amount = request.POST.get('amount'),
             reference_id = reference_id
         )
-        account.balance += decimal.Decimal(request.POST.get('amount'))
-        account.save()
+        session['account'].balance += decimal.Decimal(request.POST.get('amount'))
+        session['account'].save()
         tr.save()
         serialized_tr = TransactionSerializer(tr)
         return Response({"status":"success","data":{"deposit":serialized_tr.data}})
@@ -115,12 +113,11 @@ def deposit(request):
 @api_view(['POST',])
 @is_autheticated
 def withdraw(request):
-    user_session = CustAuthToken.objects.get(token_id = request.headers.get('Authorization'))
-    account = Account.objects.get(id = user_session.user.id)
+    session = get_session(token_id = request.headers.get('Authorization'))
     amount = decimal.Decimal(request.POST.get('amount'))
     reference_id = request.POST.get('reference_id')
 
-    if account.status == 'D':
+    if session['account'].status == 'D':
         return Response({
             "status" : "fail",
             "data" : {"error" : "Account is Disabled"}
@@ -132,22 +129,26 @@ def withdraw(request):
             "data" : {"error" : "referance_id not unique"}
             },status=200) 
 
-    elif amount > account.balance:
+    elif amount > session['account'].balance:
         return Response({"status":"failed","data":{"error":"Insufficient Funds"}},status=200)
 
     tr_wd = Transaction(
-    transaction_by = account,
+    transaction_by = session['account'],
     transaction_type = "Withdrawal",
     transaction_time = datetime.now().isoformat(),
     amount = request.POST.get('amount'),
     reference_id = reference_id
     )
-    account.balance = account.balance - amount
-    account.save()
+    session['account'].balance = session['account'].balance - amount
+    session['account'].save()
     tr_wd.save()
     serialized_tr = TransactionSerializer(tr_wd)
     return Response({"status":"success","data":{"withdrawal":serialized_tr.data}})
 
+def get_session(token_id):
+    user_token = CustAuthToken.objects.get(token_id = token_id)
+    account = Account.objects.get(id = user_token.user.id)
+    return {"user_token":user_token,"account":account}
 
 def check_reference_id(reference_id):
     try:
