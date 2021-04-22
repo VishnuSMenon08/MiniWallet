@@ -2012,3 +2012,6 @@ INFO:django.utils.autoreload:C:\workspace\MiniWallet\miniwallet\api_service\mode
 INFO:django.utils.autoreload:C:\workspace\MiniWallet\miniwallet\api_service\models.py changed, reloading.
 WARNING:django.request:Not Found: /api/v1/wallet/
 INFO:django.utils.autoreload:C:\workspace\MiniWallet\miniwallet\api_service\views.py changed, reloading.
+WARNING:django.request:Method Not Allowed: /api/v1/init
+ERROR:root:Exception in init wallet : NOT NULL constraint failed: api_service_account.owned_by
+ERROR:django.request:Internal Server Error: /api/v1/init
