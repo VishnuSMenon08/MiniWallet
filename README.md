@@ -1,5 +1,5 @@
 # MiniWallet
-Mini Wallet service is exposed through an API service
+An API with basic wallet functions for a web client
 
 # pre-requisites
 To get started with this project create a virtual environment and install the required python packages. pip install requirements.txt
